@@ -15,9 +15,4 @@ $(document).ready(function() {
     timeout: 5000,
   });
   
-  //Non-essential script for .btn
-  $('.btn').click(function(e) {
-    e.preventDefault();
-    $('body').toggleClass('touch');
-  });
 });
