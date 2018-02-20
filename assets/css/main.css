@@ -129,7 +129,12 @@ header img {
     the assets
 -----------------*/
 .the-assets {
-  padding: 5rem 0;
+  padding: 10rem 0;
+}
+
+#video {
+	width: 100%;
+	margin: 2.5rem 0;
 }
 
 .module {
@@ -213,6 +218,10 @@ header img {
   }
 }
 
+.team img {
+	border-radius: 50%;
+	border: 2px solid #bababa;
+}
 
 
 
