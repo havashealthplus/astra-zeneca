@@ -1,0 +1,147 @@
+html, body {
+	height: 1000px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 62.5%;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+p, span, a {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+        -o-font-smoothing: antialiased;
+}
+
+.content {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  min-height: 300px;
+}
+
+.center-it {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  max-width: 90%;
+}
+
+.center-it h1 {
+	font-size: 4rem;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.video-container {
+	position: absolute;
+	display: block;
+  background: url('../images/bg.jpg') center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+}
+
+.touch .video-container {
+  display: none;
+}
+
+#bg-video {
+	position: absolute;
+  display: block;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.lt-ie8 .video-container {
+  display: none;
+}
+
+.slides {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides li {
+	position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.slides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.slides {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.slides .slide {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: static;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.touch .slides,
+.novideo .slides,
+.lt-ie8 .slides {
+  display: block;
+}
+
+.touch .slides .slide1,
+.novideo .slides .slide1,
+.lt-ie8 .slides .slide1 {
+  background-image: url('../images/slide-one-bg.png');
+}
+
+.touch .slides .slide2,
+.novideo .slides .slide2,
+.lt-ie8 .slides .slide2 {
+  background-image: url('../images/slide-two-bg.png');
+}
+
+.touch .slides .slide3,
+.novideo .slides .slide3,
+.lt-ie8 .slides .slide3 {
+  background-image: url('../images/slide-three-bg.png');
+}
