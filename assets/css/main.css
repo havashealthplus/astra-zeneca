@@ -209,6 +209,10 @@ header img {
   text-align: center;
 }
 
+.team span {
+  color: #bababa;
+}
+
 @media screen and (min-width: 1200px) {
   .team h2 {
     font-size: 4.5rem;
@@ -219,6 +223,7 @@ header img {
 }
 
 .team img {
+  margin: 5rem 0 1.5rem;
 	border-radius: 50%;
 	border: 2px solid #bababa;
 }
