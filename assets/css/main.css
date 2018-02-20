@@ -1,3 +1,6 @@
+/*-----------------
+     general
+-----------------*/
 html, body {
 	height: 100%;
 	width: 100%;
@@ -7,6 +10,7 @@ html, body {
 	font-size: 62.5%;
   font-style: normal;
   font-weight: normal;
+  color: #051033;
 }
 
 h1, h2, h3,
@@ -22,6 +26,37 @@ p, span, a {
         -o-font-smoothing: antialiased;
 }
 
+
+/*-----------------
+    navigation
+-----------------*/
+header {
+  position: absolute;
+  z-index: 1;
+  height: 5rem;
+  width: 100%;
+}
+
+header img {
+  max-height: 4rem;
+  width: auto;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 801px) {
+  header img {
+    max-height: 5rem;
+  }
+}
+
+.right {
+  float: right;
+}
+
+
+/*-----------------
+     feature
+-----------------*/
 .intro {
   position: relative;
   height: 100%;
@@ -89,6 +124,10 @@ p, span, a {
   }
 }
 
+
+/*-----------------
+    the assets
+-----------------*/
 .the-assets {
   padding: 5rem 0;
 }
@@ -100,32 +139,33 @@ p, span, a {
   border: 1px solid #eee;
 }
 
-.module h2 {
+.the-assets h2 {
   padding-bottom: 2.5rem;
   font-size: 3rem;
+  font-weight: 700;
   text-align: center;
 }
 
-.module p {
+.the-assets p {
   padding-bottom: 2.5rem;
   font-size: 1.8rem;
   text-align: center;
 }
 
-.module a {
+.the-assets a {
   font-size: 1.6rem;
   text-decoration: none;
   color: #ffffff;
 }
 
 @media screen and (min-width: 1200px) {
-  .module h2 {
+  .the-assets h2 {
     font-size: 4.5rem;
   }
-  .module p {
+  .the-assets p {
     font-size: 2.5rem;
   }
-  .module a {
+  .the-assets a {
     font-size: 2rem;
     text-decoration: none;
   }
@@ -148,9 +188,30 @@ p, span, a {
 }
 
 
+/*-----------------
+     the team
+-----------------*/
+.team h2 {
+  padding-bottom: 2.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
 
+.team p {
+  padding-bottom: 2.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
 
-
+@media screen and (min-width: 1200px) {
+  .team h2 {
+    font-size: 4.5rem;
+  }
+  .team p {
+    font-size: 2.5rem;
+  }
+}
 
 
 
