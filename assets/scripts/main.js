@@ -1,18 +1,32 @@
-//MOBILE SLIDER
-$(document).ready(function() {
-  
-  //Fade in video
-  $(function () {
-    var video = document.getElementById("bg-video");
-    video.addEventListener('play', function (e) {
-      $('#bg-video').delay(300).animate({'opacity': '1'}, 500);
-    });
-  });
-  
-  //Activate responsive slider
-  $(".touch .slides, .novideo .slides, .lt-ie8 .slides,.slides").responsiveSlides({
-    speed: 500,
-    timeout: 5000,
-  });
-  
-});
+var vid = document.getElementById("bgvid");
+var pauseButton = document.querySelector("#polina button");
+
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+}
+
+function vidFade() {
+  vid.classList.add("stopfade");
+}
+
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed 
+vid.pause();
+// to capture IE10
+vidFade();
+}); 
+
+
+pauseButton.addEventListener("click", function() {
+  vid.classList.toggle("stopfade");
+  if (vid.paused) {
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+})
