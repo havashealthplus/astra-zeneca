@@ -196,6 +196,10 @@ header img {
 /*-----------------
      the team
 -----------------*/
+.team {
+  margin-bottom: 7.5rem;
+}
+
 .team h2 {
   padding-bottom: 2.5rem;
   font-size: 3rem;
