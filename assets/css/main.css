@@ -1,5 +1,5 @@
 html, body {
-	height: 1000px;
+	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -23,7 +23,7 @@ p, span, a {
 }
 
 .intro {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -88,6 +88,69 @@ p, span, a {
     font-size: 7rem;
   }
 }
+
+.the-assets {
+  padding: 5rem 0;
+}
+
+.module {
+  margin: 2.5rem 0;
+  padding: 2.5rem 1.5rem;
+  border-radius: .6rem;
+  border: 1px solid #eee;
+}
+
+.module h2 {
+  padding-bottom: 2.5rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.module p {
+  padding-bottom: 2.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.module a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .module h2 {
+    font-size: 4.5rem;
+  }
+  .module p {
+    font-size: 2.5rem;
+  }
+  .module a {
+    font-size: 2rem;
+    text-decoration: none;
+  }
+}
+
+.button, .button:visited {
+  display: block;
+  max-width: 20rem;
+  margin: 0 auto;
+  padding: 1.5rem 2.5rem;
+  border-radius: .6rem;
+  background: #860052;
+  background: linear-gradient(-45deg, #860052, #fcaf17);
+  text-align: center;
+  -webkit-transition: box-shadow .3s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 0 0 7px 2px rgba(0,0,0,0.3);
+}
+
+
+
+
+
 
 
 
