@@ -91,7 +91,6 @@ header img {
 
 .feature {
   height: 100%;
-  width: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,7 +107,7 @@ header img {
 
 @media screen and (min-width: 800px) {
   .feature {
-    max-width: 900px;
+    max-width: 1000px;
   }
   .feature h1 {
     font-size: 6rem;
@@ -117,7 +116,7 @@ header img {
 
 @media screen and (min-width: 1200px) {
   .feature {
-    max-width: 1200px;
+    max-width: 1250px;
   }
   .feature h1 {
     font-size: 8rem;
