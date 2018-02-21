@@ -107,7 +107,7 @@ header img {
 
 @media screen and (min-width: 800px) {
   .feature {
-    max-width: 1000px;
+    max-width: 900px;
   }
   .feature h1 {
     font-size: 6rem;
@@ -116,7 +116,7 @@ header img {
 
 @media screen and (min-width: 1200px) {
   .feature {
-    max-width: 1250px;
+    max-width: 1200px;
   }
   .feature h1 {
     font-size: 8rem;
@@ -128,12 +128,12 @@ header img {
     the assets
 -----------------*/
 .the-assets {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 #video {
 	width: 100%;
-	margin: 2.5rem 0;
+	margin: 5rem 0;
 }
 
 .module {
@@ -181,8 +181,7 @@ header img {
   margin: 0 auto;
   padding: 1.5rem 2.5rem;
   border-radius: .6rem;
-  background: #860052;
-  background: linear-gradient(-45deg, #860052, #fcaf17);
+  background: #ff001b;
   text-align: center;
   -webkit-transition: box-shadow .3s ease-in-out;
 }
